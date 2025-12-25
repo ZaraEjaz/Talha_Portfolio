@@ -20,21 +20,26 @@ const AvailableStatus = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 text-sm">
+    <div className="flex flex-row md:flex-row md:items-start gap-6 md:gap-8 text-sm">
+      <div className="flex flex-col md:flex-col md:items-start text-sm">
       <div className="flex items-center gap-2">
         <span className="w-2 h-2 rounded-full bg-success animate-pulse-dot" />
-        <span className="text-foreground font-medium">Available for project</span>
+        <span className="text-foreground font-bold text-lg">Available for project</span>
       </div>
-      
+ 
       <div className="flex items-center gap-4 text-muted-foreground">
-        <span className="uppercase tracking-wide text-xs">EARLY FEB 2025</span>
+        <span className="uppercase tracking-wide text-xs ml-4 font-medium">EARLY FEB 2025</span>
       </div>
-      
+      </div>
+      <div className="flex flex-col md:flex-col md:items-start text-sm">
       <div className="flex items-center gap-2 text-foreground">
-        <span className="font-medium">{formatTime(currentTime)}</span>
-        <span className="text-muted-foreground text-xs">(GMT+7)</span>
+        <span className="font-bold text-lg">{formatTime(currentTime)}</span>
       </div>
-    </div>
+      <div className="flex items-center gap-2 text-foreground">
+        <span className="text-muted-foreground text-xs font-medium">(GMT+7)</span>
+      </div>
+      </div>
+      </div>
   );
 };
 
