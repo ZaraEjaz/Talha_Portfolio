@@ -18,7 +18,7 @@ export default function ExperienceSection() {
               Intern → Software Engineer
             </p>
             <p className="text-sm text-neutral-500 mt-1">
-              July 2025 - Present
+              July 2025 - November 2025
             </p>
           </div>
           
@@ -44,7 +44,7 @@ export default function ExperienceSection() {
       ),
     },
     {
-      title: "2024",
+      title: "2025",
       content: (
         <div className="flex flex-col gap-6">
           <div>
@@ -55,7 +55,7 @@ export default function ExperienceSection() {
               Software Engineering Intern
             </p>
             <p className="text-sm text-neutral-500 mt-1">
-              2024
+              December 2025 - Present
             </p>
           </div>
           
